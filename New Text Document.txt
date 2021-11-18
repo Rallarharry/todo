@@ -2,3 +2,8 @@ Gör en input textrad i html(ta reda på hur)
 Gör en <li> i html.
 	Gör 2 olika funktioner i js, en som lägger till <li> element och en som deletar
 	(ta reda på hur man kopplar ihop detta)
+
+
+
+
+	display: flex; man linar upp saker bredvid varandra
