@@ -15,47 +15,50 @@ function clearField() {
     inputRuta.value = "";
 }
 function addLi() {
+    
     // förhindra refresh
     event.preventDefault();
     
-    // Skapa todo DIV
-    const toDoDiv = document.createElement('div');
+    if (inputRuta.value !== "To do.." && inputRuta.value !== "") {
+        // Skapa todo DIV
+        const toDoDiv = document.createElement('div');
         // lägg till "todo" som class
-    toDoDiv.classList.add("todo");
-    
-    // skapa li
-    const nyToDo = document.createElement('li');
-    nyToDo.innerHTML += inputRuta.value;
-    
-    // gör klass till html elementet
-    nyToDo.classList.add("todo-item")
-    
-    // fäst to do item till DIVen
-    toDoDiv.appendChild(nyToDo);
-            
-    // completed knapp
-    const completeButton = document.createElement('button');
-    completeButton.innerHTML = '<i class="fa-solid fa-check"></i>'
-    completeButton.classList.add("complete-btn");
-    toDoDiv.appendChild(completeButton);
-
-    // skräp knapp
-    const trashButton = document.createElement('button');
-    trashButton.innerHTML = `<i class="fa-solid fa-minus"></i>`
-    trashButton.classList.add("trash-btn");
-    console.log(trashButton);
-    toDoDiv.appendChild(trashButton);
-    
-    // appenda till listan
-    ulEl.appendChild(toDoDiv);
-
-    // reseta input rutan
-    inputRuta.value = "To do..";
+        toDoDiv.classList.add("todo");
+        
+        // skapa li
+        const nyToDo = document.createElement('li');
+        nyToDo.innerHTML += inputRuta.value;
+        
+        // gör klass till html elementet
+        nyToDo.classList.add("todo-item")
+        
+        // fäst to do item till DIVen
+        toDoDiv.appendChild(nyToDo);
+        
+        // completed knapp
+        const completeButton = document.createElement('button');
+        completeButton.innerHTML = '<i class="fa-solid fa-check"></i>'
+        completeButton.classList.add("complete-btn");
+        toDoDiv.appendChild(completeButton);
+        
+        // skräp knapp
+        const trashButton = document.createElement('button');
+        trashButton.innerHTML = `<i class="fa-solid fa-minus"></i>`
+        trashButton.classList.add("trash-btn");
+        console.log(trashButton);
+        toDoDiv.appendChild(trashButton);
+        
+        // appenda till listan
+        ulEl.appendChild(toDoDiv);
+        
+        // reseta input rutan
+        inputRuta.value = "To do..";
+    }
 }
-
-function deleteCheck(e) {
     
-    // gör en variabel som håller information vart man klickar
+    function deleteCheck(e) {
+        
+        // gör en variabel som håller information vart man klickar
     const item = e.target;
     console.log(e.target)
     // om första indexet på items "classList"
