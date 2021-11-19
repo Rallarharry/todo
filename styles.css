@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -42,6 +43,7 @@ form button {
     background: white;
     cursor: pointer;
     transition: all 0.1s ease;
+    
 }
 
 form button:hover {
@@ -58,7 +60,7 @@ form button:hover {
 /* fixa spacining */
 .todo {
     /* box-shadow: -2px 2px 1px black; */
-    margin: 1px 15rem 1px 15rem;
+    /* margin: 1px 15rem 1px 45rem; */
     background: white;
     display: flex;
     align-items: center;
@@ -68,13 +70,20 @@ form button:hover {
     font-size: 20px;
     font-family: poppins;
     transition: all 0.2s ease;
+    
 }
 
+#ul-el {
+    display: table;
+    margin: 0 auto;
+    min-width: 50vh;
+}
 .todo li {
     flex: 1;
     margin: 0px;
     padding: 0px;
     height: 30%;
+    
 }
 
 .completed {

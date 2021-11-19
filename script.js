@@ -8,9 +8,12 @@ const listItems = [];
 
 btnEl.addEventListener("click", addLi);
 ulEl.addEventListener("click", deleteCheck)
-
+inputRuta.value = "To do..";
+inputRuta.addEventListener("click", clearField)
 // funktioner
-
+function clearField() {
+    inputRuta.value = "";
+}
 function addLi() {
     // förhindra refresh
     event.preventDefault();
@@ -54,6 +57,7 @@ function deleteCheck(e) {
     
     // gör en variabel som håller information vart man klickar
     const item = e.target;
+    console.log(e.target)
     // om första indexet på items "classList"
     if (item.classList[0] === "trash-btn") {
             // gör en variabel som tar in
@@ -67,8 +71,6 @@ function deleteCheck(e) {
             
             const todo = item.parentElement
             todo.classList.toggle("completed");
-            console.log(todo)
-            console.log(todo[0])
         }   
 }
 
