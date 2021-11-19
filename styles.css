@@ -32,6 +32,7 @@ form button {
     border: none;
     font-size: 20px;
     box-shadow: -2px 2px 2px black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 form input {
@@ -72,12 +73,12 @@ form button:hover {
     justify-content:space-between;
     list-style: none;
     font-size: 20px;
-    font-family: poppins;
     transition: all 0.2s ease;
     text-align: left;
     display: table;
     margin: 0 auto;
     min-width: 35vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     
 }
 .todo li {
