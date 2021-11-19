@@ -50,7 +50,7 @@ function addLi() {
     ulEl.appendChild(toDoDiv);
 
     // reseta input rutan
-    inputRuta.value = "";
+    inputRuta.value = "To do..";
 }
 
 function deleteCheck(e) {

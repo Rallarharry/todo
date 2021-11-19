@@ -70,13 +70,16 @@ form button:hover {
     font-size: 20px;
     font-family: poppins;
     transition: all 0.2s ease;
-    
+    text-align: left;
+    margin-bottom: 2px;
+    padding-left: 5px;
 }
 
 #ul-el {
     display: table;
     margin: 0 auto;
-    min-width: 50vh;
+    min-width: 35vh;
+    
 }
 .todo li {
     flex: 1;
