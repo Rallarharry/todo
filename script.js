@@ -45,7 +45,6 @@ function addLi() {
         const trashButton = document.createElement('button');
         trashButton.innerHTML = `<i class="fa-solid fa-minus"></i>`
         trashButton.classList.add("trash-btn");
-        console.log(trashButton);
         toDoDiv.appendChild(trashButton);
         
         // appenda till listan
@@ -60,7 +59,6 @@ function addLi() {
         
         // gör en variabel som håller information vart man klickar
     const item = e.target;
-    console.log(e.target)
     // om första indexet på items "classList"
     if (item.classList[0] === "trash-btn") {
             // gör en variabel som tar in
